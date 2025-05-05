@@ -1,115 +1,4 @@
-/* General Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
-    background-color: #f4f4f7;
-    color: #333;
-    line-height: 1.6;
-    padding-top: 50px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-body.dark-mode {
-    background-color: #333;
-    color: #f4f4f7;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-/* Header */
-header {
-    background: #fff;
-    padding: 40px 0;
-    text-align: center;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    transition: background 0.3s;
-}
-
-header.dark-mode {
-    background: #444;
-}
-
-header h1 {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-header.dark-mode h1 {
-    color: #f4f4f7;
-}
-
-header .role {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-header.dark-mode .role {
-    color: #bbb;
-}
-
-header .contact-info {
-    font-size: 16px;
-    color: #333;
-}
-
-header.dark-mode .contact-info {
-    color: #f4f4f7;
-}
-
-header .contact-info a {
-    color: #007aff;
-}
-
-header .contact-info a:hover {
-    text-decoration: underline;
-}
-
-/* About Section */
-#about {
-    background-color: #fff;
-    padding: 40px 0;
-    text-align: center;
-    transition: background 0.3s;
-}
-
-#about.dark-mode {
-    background-color: #444;
-}
-
-#about h2 {
-    font-size: 30px;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-#about.dark-mode h2 {
-    color: #f4f4f7;
-}
-
-#about .bio {
-    font-size: 18px;
-    color: #666;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
-}
-
-#about.dark-mode .bio {
-    color: #bbb;
-}
-
-/* Toggle Button Styles */
+/* Button Styling */
 .toggle-btn {
     position: fixed;
     top: 20px;
@@ -122,6 +11,7 @@ header .contact-info a:hover {
     font-size: 18px;
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 9999; /* Ensure it's on top of other elements */
     transition: background-color 0.3s;
 }
 
