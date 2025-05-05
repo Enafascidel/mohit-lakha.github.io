@@ -11,6 +11,12 @@ body {
     color: #333;
     line-height: 1.6;
     padding-top: 50px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f7;
 }
 
 .container {
@@ -24,6 +30,11 @@ header {
     padding: 40px 0;
     text-align: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: background 0.3s;
+}
+
+header.dark-mode {
+    background: #444;
 }
 
 header h1 {
@@ -33,15 +44,27 @@ header h1 {
     color: #333;
 }
 
+header.dark-mode h1 {
+    color: #f4f4f7;
+}
+
 header .role {
     font-size: 18px;
     color: #666;
     margin-bottom: 20px;
 }
 
+header.dark-mode .role {
+    color: #bbb;
+}
+
 header .contact-info {
     font-size: 16px;
     color: #333;
+}
+
+header.dark-mode .contact-info {
+    color: #f4f4f7;
 }
 
 header .contact-info a {
@@ -57,12 +80,21 @@ header .contact-info a:hover {
     background-color: #fff;
     padding: 40px 0;
     text-align: center;
+    transition: background 0.3s;
+}
+
+#about.dark-mode {
+    background-color: #444;
 }
 
 #about h2 {
     font-size: 30px;
     color: #333;
     margin-bottom: 20px;
+}
+
+#about.dark-mode h2 {
+    color: #f4f4f7;
 }
 
 #about .bio {
@@ -73,128 +105,26 @@ header .contact-info a:hover {
     line-height: 1.6;
 }
 
-/* Experience Section */
-#experience {
-    background-color: #f9f9f9;
-    padding: 40px 0;
+#about.dark-mode .bio {
+    color: #bbb;
 }
 
-#experience h2 {
-    font-size: 30px;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.experience-item {
-    margin-bottom: 30px;
-}
-
-.experience-item h3 {
-    font-size: 24px;
-    font-weight: 600;
-    color: #333;
-}
-
-.experience-item p {
-    font-size: 16px;
-    color: #777;
-}
-
-.experience-item ul {
-    list-style: none;
-    margin-top: 10px;
-}
-
-.experience-item ul li {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 8px;
-}
-
-/* Education Section */
-#education {
-    background-color: #fff;
-    padding: 40px 0;
-}
-
-#education h2 {
-    font-size: 30px;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.education-item h3 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 5px;
-}
-
-.education-item p {
-    font-size: 16px;
-    color: #777;
-}
-
-/* Skills Section */
-#skills {
-    background-color: #f9f9f9;
-    padding: 40px 0;
-}
-
-#skills h2 {
-    font-size: 30px;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.skills h3 {
-    font-size: 20px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.skills ul {
-    list-style: none;
-    margin-left: 20px;
-}
-
-.skills ul li {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 8px;
-}
-
-/* Languages Section */
-#languages {
-    background-color: #fff;
-    padding: 40px 0;
-}
-
-#languages h2 {
-    font-size: 30px;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-#languages ul {
-    list-style: none;
-    text-align: center;
-}
-
-#languages ul li {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 8px;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
+/* Toggle Button Styles */
+.toggle-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #007aff;
     color: white;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 14px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.toggle-btn:hover {
+    background-color: #005fa3;
 }
