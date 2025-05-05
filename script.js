@@ -1,41 +1,17 @@
-console.log("JS Loaded"); // Check if JS is loaded
+// Dark mode toggle functionality
+const darkModeToggle = document.getElementById("dark-mode-toggle");
 
-// Get the dark mode toggle button
-const toggleButton = document.getElementById('dark-mode-toggle');
+darkModeToggle.addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
 
-// Check if the button exists in the DOM
-if (!toggleButton) {
-    console.error("Dark mode toggle button not found!");
-} else {
-    console.log("Dark mode button found!");
-}
-
-// Check for saved user preference in localStorage (if any)
-const darkModePreference = localStorage.getItem('dark-mode');
-if (darkModePreference === 'enabled') {
-    document.body.classList.add('dark-mode');
-    document.querySelector('header').classList.add('dark-mode');
-    document.querySelector('#about').classList.add('dark-mode');
-    toggleButton.innerHTML = '☀️'; // Change to sun icon when dark mode is enabled
-    console.log("Dark mode enabled from localStorage");
-} else {
-    toggleButton.innerHTML = '🌙'; // Keep moon icon for light mode
-}
-
-// Toggle dark mode on button click
-toggleButton.addEventListener('click', () => {
-    console.log("Toggle button clicked");
-
-    document.body.classList.toggle('dark-mode');
-    document.querySelector('header').classList.toggle('dark-mode');
-    document.querySelector('#about').classList.toggle('dark-mode');
-
-    // Toggle the icon and update localStorage
-    if (document.body.classList.contains('dark-mode')) {
-        toggleButton.innerHTML = '☀️'; // Change to sun icon for light mode
-        localStorage.setItem('dark-mode', 'enabled');
+    // Toggle the button icon and text
+    if (document.body.classList.contains("dark-mode")) {
+        darkModeToggle.textContent = "🌞"; // Change to sun in dark mode
+        darkModeToggle.classList.add("moon-mode");
+        darkModeToggle.classList.remove("sun-mode");
     } else {
-        toggleButton.innerHTML = '🌙'; // Change to moon icon for dark mode
-        localStorage.setItem('dark-mode', 'disabled');
+        darkModeToggle.textContent = "🌙"; // Change to moon in light mode
+        darkModeToggle.classList.add("sun-mode");
+        darkModeToggle.classList.remove("moon-mode");
     }
 });
