@@ -1,7 +1,13 @@
-// Check if the dark mode toggle button exists
+console.log("JS Loaded"); // Check if JS is loaded
+
+// Get the dark mode toggle button
 const toggleButton = document.getElementById('dark-mode-toggle');
+
+// Check if the button exists in the DOM
 if (!toggleButton) {
     console.error("Dark mode toggle button not found!");
+} else {
+    console.log("Dark mode button found!");
 }
 
 // Check for saved user preference in localStorage (if any)
