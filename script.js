@@ -27,12 +27,12 @@ toggleButton.addEventListener('click', () => {
     document.querySelector('header').classList.toggle('dark-mode');
     document.querySelector('#about').classList.toggle('dark-mode');
 
-    // Save the user's preference to localStorage
+    // Toggle the icon
     if (document.body.classList.contains('dark-mode')) {
+        toggleButton.innerHTML = '☀️'; // Sun icon for light mode
         localStorage.setItem('dark-mode', 'enabled');
-        console.log("Dark mode enabled");
     } else {
+        toggleButton.innerHTML = '🌙'; // Moon icon for dark mode
         localStorage.setItem('dark-mode', 'disabled');
-        console.log("Dark mode disabled");
     }
 });
