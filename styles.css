@@ -116,25 +116,31 @@ header {
     background-color: #e0e0e5; /* Slightly darker gray for contrast */
     color: #1d1d1f; /* Dark Gray text for contrast */
     padding: 20px 0;
-    text-align: center;
+    text-align: center; /* Center everything */
     border-bottom: 2px solid #ccc; /* Optional subtle border */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
 }
 
 header .logo {
-    font-size: 2rem; /* Logo size */
+    font-size: 2rem;
     font-weight: bold;
-    display: flex; /* Ensure it’s using flexbox for alignment */
-    align-items: center; /* Center the logo vertically */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center logo content */
+    margin: 0 auto; /* Remove margin */
 }
 
 header .logo img {
     height: 50px; /* Adjust logo size */
     width: auto;  /* Maintain aspect ratio */
-    margin-right: 15px; /* Add spacing if needed */
+    margin-right: 0; /* No margin for the image */
 }
 
 header nav {
     margin-top: 15px;
+    text-align: center; /* Center the navigation links */
 }
 
 header nav a {
