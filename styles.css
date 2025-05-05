@@ -130,7 +130,7 @@ header .logo {
     display: flex;
     align-items: center;
     justify-content: center; /* Center logo content */
-    margin: 0;
+    margin-left: 2cm; /* Move the logo 2cm to the right */
 }
 
 header .logo img {
