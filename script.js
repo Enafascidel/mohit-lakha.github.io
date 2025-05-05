@@ -16,7 +16,10 @@ if (darkModePreference === 'enabled') {
     document.body.classList.add('dark-mode');
     document.querySelector('header').classList.add('dark-mode');
     document.querySelector('#about').classList.add('dark-mode');
+    toggleButton.innerHTML = '☀️'; // Change to sun icon when dark mode is enabled
     console.log("Dark mode enabled from localStorage");
+} else {
+    toggleButton.innerHTML = '🌙'; // Keep moon icon for light mode
 }
 
 // Toggle dark mode on button click
@@ -27,12 +30,12 @@ toggleButton.addEventListener('click', () => {
     document.querySelector('header').classList.toggle('dark-mode');
     document.querySelector('#about').classList.toggle('dark-mode');
 
-    // Toggle the icon
+    // Toggle the icon and update localStorage
     if (document.body.classList.contains('dark-mode')) {
-        toggleButton.innerHTML = '☀️'; // Sun icon for light mode
+        toggleButton.innerHTML = '☀️'; // Change to sun icon for light mode
         localStorage.setItem('dark-mode', 'enabled');
     } else {
-        toggleButton.innerHTML = '🌙'; // Moon icon for dark mode
+        toggleButton.innerHTML = '🌙'; // Change to moon icon for dark mode
         localStorage.setItem('dark-mode', 'disabled');
     }
 });
