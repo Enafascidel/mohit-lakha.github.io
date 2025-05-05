@@ -1,4 +1,4 @@
-// Dark mode toggle functionality
+// Dark mode toggle functionality 
 const darkModeToggle = document.getElementById("dark-mode-toggle");
 
 darkModeToggle.addEventListener("click", function () {
