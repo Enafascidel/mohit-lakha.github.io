@@ -101,8 +101,8 @@ section {
 
 /* Footer Section */
 footer {
-    background-color: #f2f2f5; /* Apple Gray for a clean, light background */
-    color: #1d1d1f; /* Dark Gray for text to maintain contrast */
+    background-color: #e0e0e5; /* Slightly darker gray for more distinction */
+    color: #1d1d1f; /* Dark Gray text for contrast */
     text-align: center;
     padding: 20px;
 }
