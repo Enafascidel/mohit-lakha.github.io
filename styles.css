@@ -111,6 +111,37 @@ footer p {
     margin: 0;
 }
 
+/* Header Section */
+header {
+    background-color: #e0e0e5; /* Slightly darker gray for contrast */
+    color: #1d1d1f; /* Dark Gray text for contrast */
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #ccc; /* Optional subtle border */
+}
+
+header .logo {
+    font-size: 2rem; /* Logo size */
+    font-weight: bold;
+}
+
+header nav {
+    margin-top: 15px;
+}
+
+header nav a {
+    margin: 0 15px;
+    color: #1d1d1f;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    color: #007aff; /* Apple blue hover effect */
+    transition: color 0.3s ease;
+}
+
 /* Section Styling for About, Experience, Education */
 h2 {
     font-size: 2.5rem;
@@ -176,5 +207,23 @@ ul {
 
     .container {
         width: 90%;
+    }
+
+    header {
+        text-align: left; /* Adjust header text alignment for smaller screens */
+        padding: 15px 0;
+    }
+
+    header .logo {
+        font-size: 1.8rem; /* Logo size smaller for mobile */
+    }
+
+    header nav {
+        margin-top: 10px;
+    }
+
+    header nav a {
+        font-size: 1rem; /* Adjust font size of nav links on smaller screens */
+        margin: 0 10px;
     }
 }
