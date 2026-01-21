@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohit Lakha | Generative AI Portfolio</title>
+  <meta name="description" content="Portfolio showcasing Generative AI skills, projects, and expertise." />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+      --accent-soft: rgba(56, 189, 248, 0.15);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      background: linear-gradient(180deg, #020617, #0f172a);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 4rem 1.5rem;
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    header h1 {
+      font-size: clamp(2.2rem, 4vw, 3.2rem);
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 3rem 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      margin-bottom: 1.5rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 0.75rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #020617, var(--card));
+      border-radius: 16px;
+      padding: 1.5rem;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 30px 60px rgba(0,0,0,0.45);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+      color: #f9fafb;
+    }
+
+    .card p {
+      margin: 0.5rem 0 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-top: 0.75rem;
+      margin-right: 0.4rem;
+      padding: 0.25rem 0.6rem;
+      font-size: 0.75rem;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+
+    .about {
+      background: linear-gradient(180deg, #020617, #020617);
+      border-radius: 20px;
+      padding: 2rem;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1.5rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .cta {
+      margin-top: 2rem;
+    }
+
+    .cta a {
+      display: inline-block;
+      padding: 0.75rem 1.4rem;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+      color: #020617;
+      font-weight: 600;
+      margin: 0.4rem;
+    }
+
+    .cta a.secondary {
+      background: transparent;
+      color: var(--accent);
+      border: 1px solid var(--accent);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Mohit Lakha</h1>
+    <p>Generative AI Developer focused on building intelligent systems using large language models, image generation, prompt engineering, and AI-driven automation.</p>
+    <div class="cta">
+      <a href="https://github.com/" target="_blank">GitHub</a>
+      <a href="#projects" class="secondary">View Projects</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Core Generative AI Skills</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Generative AI & Prompt Engineering</h3>
+        <p>Expertise in designing high-impact prompts and workflows for text, image, and video generation across multiple AI platforms.</p>
+        <span class="tag">Generative AI</span>
+        <span class="tag">Prompt Engineering</span>
+        <span class="tag">Idea Generation</span>
+      </div>
+
+      <div class="card">
+        <h3>AI Content & Text Generation</h3>
+        <p>Creating high-quality written content including blogs, scripts, stories, marketing copy, and structured documents.</p>
+        <span class="tag">Text Generation</span>
+        <span class="tag">Script Writing</span>
+        <span class="tag">Storytelling</span>
+      </div>
+
+      <div class="card">
+        <h3>Image Generation</h3>
+        <p>Producing and transforming visuals using advanced generative models for creative, marketing, and product use cases.</p>
+        <span class="tag">Text-to-Image</span>
+        <span class="tag">Image-to-Image</span>
+        <span class="tag">Creative AI</span>
+      </div>
+
+      <div class="card">
+        <h3>Video Generation</h3>
+        <p>Generating short-form and conceptual videos from text and images for storytelling, ads, and presentations.</p>
+        <span class="tag">Text-to-Video</span>
+        <span class="tag">Image-to-Video</span>
+        <span class="tag">Video AI</span>
+      </div>
+
+      <div class="card">
+        <h3>Model Fine-Tuning</h3>
+        <p>Customizing and optimizing AI models for domain-specific tasks, improved accuracy, and controlled outputs.</p>
+        <span class="tag">Fine-Tuning</span>
+        <span class="tag">Custom Models</span>
+      </div>
+
+      <div class="card">
+        <h3>AI Automation & Tool Building</h3>
+        <p>Developing paid and free AI-powered tools that automate workflows, content creation, and business processes.</p>
+        <span class="tag">AI Automation</span>
+        <span class="tag">Online Tools</span>
+        <span class="tag">APIs</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Selected Projects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>AI Image Editing Tool</h3>
+        <p>Web-based tool that allows users to modify images using natural language instructions.</p>
+        <span class="tag">Diffusion Models</span>
+        <span class="tag">Prompt Control</span>
+      </div>
+
+      <div class="card">
+        <h3>LLM-Powered Assistant</h3>
+        <p>Conversational assistant capable of reasoning, summarization, and structured output generation.</p>
+        <span class="tag">LLMs</span>
+        <span class="tag">Chat UI</span>
+      </div>
+
+      <div class="card">
+        <h3>Document Intelligence System</h3>
+        <p>Automated system for OCR, summarization, and PDF generation from unstructured documents.</p>
+        <span class="tag">OCR</span>
+        <span class="tag">PDF Automation</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>About Me</h2>
+    <div class="about">
+      <p>I specialize in applying generative AI to solve real-world problems, from creative media generation to enterprise automation. My work focuses on building reliable, scalable, and explainable AI systems with a strong emphasis on usability and performance.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Mohit Lakha · Built for GitHub Pages</p>
+  </footer>
+
+</body>
+</html>
